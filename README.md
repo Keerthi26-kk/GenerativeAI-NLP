@@ -1,85 +1,89 @@
-AI-Powered Resume Screener
+ AI-Powered Resume Screener
 
-Overview
+ Overview
 
-This project is an AI-powered Resume Screener that uses Natural Language Processing (NLP) and Machine Learning (ML) to classify resumes into different job categories. It utilizes pipelines and GridSearchCV for efficient preprocessing and model optimization.
+Finding the right candidate for a job is challenging. This AI-powered Resume Screener simplifies the process by leveraging Natural Language Processing (NLP) and Machine Learning (ML) to automatically classify resumes into different job categories.
 
-Features
+✅ Seamless AI-driven Resume Screening
+✅ Automated Text Processing with Pipelines
+✅ Hyperparameter Optimization with GridSearchCV
+✅ Fast, Efficient & Scalable!
 
-Automated resume classification based on text content.
+ Features
 
-TF-IDF Vectorization for text feature extraction.
+📌 Automated Resume Classification based on text content.
 
-Pipeline Integration for seamless data transformation and modeling.
+📌 TF-IDF Vectorization for text feature extraction.
 
-GridSearchCV Optimization to find the best hyperparameters.
+📌 Pipeline Integration for seamless data transformation and modeling.
 
-Random Forest Classifier for accurate classification.
+📌 GridSearchCV Optimization to find the best hyperparameters.
 
-Installation
+📌 Random Forest Classifier for accurate classification.
 
-1. Clone the Repository
+ Installation
+
+1️⃣ Clone the Repository
 
 git clone https://github.com/yourusername/resume-screener.git
 cd resume-screener
 
-2. Install Dependencies
+2️⃣ Install Dependencies
 
 pip install -r requirements.txt
 
-Usage
+🚀 Usage
 
-1. Train the Model
+1️⃣ Train the Model
+
+Run the following command to train the model:
 
 python train.py
 
 This will:
 
-Clean and preprocess the dataset.
+✅ Clean and preprocess the dataset.
 
-Train the model using a pipeline with TF-IDF and Random Forest.
+✅ Train the model using a TF-IDF + Random Forest pipeline.
 
-Optimize hyperparameters using GridSearchCV.
+✅ Optimize hyperparameters using GridSearchCV.
 
-Save the best model.
+✅ Save the best model for later use.
 
-2. Classify a Resume
+2️⃣ Classify a Resume
 
-Run the script to predict a job category based on resume text:
+Use the trained model to predict job categories:
 
 python classify.py "Experienced data scientist with expertise in Python, machine learning, and big data."
 
-Output example:
+Example Output:
 
 Predicted Category: Data Scientist
 
-Dataset
+📂 Dataset
 
-The dataset consists of resume text samples labeled with job categories, such as:
-
-Data Scientist
+This project uses a labeled dataset of resumes, categorized into different job roles such as:
 
 Software Engineer
 
-Marketing Specialist
+ Data Scientist
 
-HR Manager
+ Marketing Specialist
 
-Cybersecurity Analyst
+ HR Manager
 
-Model Pipeline
+ Cybersecurity Analyst
 
-The machine learning pipeline consists of:
+🔄 Model Pipeline
 
-TF-IDF Vectorizer: Converts resume text into numerical features.
+Our model workflow consists of the following steps:
+1️⃣ TF-IDF Vectorizer: Converts resume text into numerical features.
+2️⃣ Random Forest Classifier: Predicts job categories based on extracted features.
+3️⃣ GridSearchCV: Tunes hyperparameters to improve accuracy.
 
-Random Forest Classifier: Classifies resumes into job categories.
+ Hyperparameter Tuning
 
-GridSearchCV: Optimizes hyperparameters for better accuracy.
-
-Hyperparameter Tuning
-
-GridSearchCV optimizes the following parameters:
+To improve model accuracy, we use GridSearchCV with the following parameter grid:
 
 param_grid = {
     'vectorizer__max_features': [3000, 5000],
@@ -90,22 +94,18 @@ param_grid = {
     'classifier__min_samples_leaf': [1, 2]
 }
 
-Results
+ Results
 
-The trained model achieves high accuracy in resume classification. Evaluation metrics include:
+ High Accuracy Resume Classification with performance evaluation using:
 
-Accuracy Score
+● Accuracy Score
+● Precision, Recall, and F1-Score
 
-Precision, Recall, and F1-Score
+ Future Enhancements
 
-Future Enhancements
+🔹 Deep Learning Integration: Add BERT, LSTMs for better NLP performance.🔹 Larger Dataset: Improve generalization by expanding training data.🔹 Web API Deployment: Convert this into an interactive tool for businesses.
 
-Add deep learning models (BERT, LSTM) for better NLP performance.
+📜 License
 
-Expand dataset with more resume samples.
+This project is open-source under the MIT License. Use it freely and contribute!
 
-Deploy as a web API for real-time classification.
-
-License
-
-This project is open-source under the MIT License.
